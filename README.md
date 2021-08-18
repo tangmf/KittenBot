@@ -22,7 +22,7 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 * rename: Rename the bot, where in .rename <new name>, replace <new name> with the bot's new name.
   
 ## Demo
-![Demo](/Images/demo.png)
+![Demo](/Images/demonew.png)
   
 ## Additional Details
 * built using discord.py
