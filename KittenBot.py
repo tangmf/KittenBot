@@ -46,6 +46,8 @@ def tick():
   if happiness <= 0:
       happiness = 0
       health -= 10
+  if health <= 0:
+      health = 0
   printdetails()
   
 tick()
@@ -113,6 +115,6 @@ async def status(ctx):
     await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness} ')
         
 
-client.run(<token here>)
+client.run('NzA0MzIzMjUxNzI3MzY4Mjgz.XqbeJA.DY_2WoQM2fPMaihZ242ZkBf4ZAo')
 
 
