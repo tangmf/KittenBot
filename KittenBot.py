@@ -115,6 +115,6 @@ async def status(ctx):
     await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness} ')
         
 
-client.run('NzA0MzIzMjUxNzI3MzY4Mjgz.XqbeJA.DY_2WoQM2fPMaihZ242ZkBf4ZAo')
+client.run(<token here>)
 
 
