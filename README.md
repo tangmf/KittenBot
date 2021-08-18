@@ -9,6 +9,7 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 ## How the stats change over time
 * Every minute, hunger and happiness decrease by 5 and 2 respectively.
 * Once the hunger reaches 0, the next time the stats decrease, health will be decreased by 5.
+* Once the happiness reaches 0, the next time the stats decrease, health will be decreased by 10.
 
 ## Commands
 * help: Shows all commands for the bot.
