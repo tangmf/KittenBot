@@ -21,6 +21,10 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 * wakeup: Wakes up the bot, where it will gain 5 health. Sets the bot back to online.
 * rename: Rename the bot, where in .rename <new name>, replace <new name> with the bot's new name.
 
+## Additional Details
+* built using discord.py
+* hosted on heroku using a private version of the repository
+
 ## Try it out!
 https://discord.com/api/oauth2/authorize?client_id=704323251727368283&permissions=0&scope=bot
 
