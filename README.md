@@ -28,6 +28,6 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 * built using discord.py
 * hosted on heroku using a private version of the repository
 
-## Try it out!
+## Get your very own discord kitten now!
 https://discord.com/api/oauth2/authorize?client_id=704323251727368283&permissions=0&scope=bot
 
