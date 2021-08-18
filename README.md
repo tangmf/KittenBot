@@ -1,10 +1,10 @@
 # KittenBot
-![Kitten](/Images/meow.png){:height="100px" width="100px"}
+![Kitten](/Images/meow.png)
 
 
 KittenBot is a very simple discord bot, and acts as a pet that will require it to be taken care of. There are 3 main stats that users will need to monitor; health, hunger and happiness. As time goes on, these stats will slowly drop, and it is up to members of the server to feed, play and care for it.
 
-![Profile](/Images/botprofile.png){:height="100px" width="100px"}
+![Profile](/Images/screenshot.png)
 
 ## How the stats change over time
 * Every minute, hunger and happiness decrease by 5 and 2 respectively.
