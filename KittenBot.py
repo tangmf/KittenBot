@@ -103,7 +103,7 @@ async def wakeup(ctx):
 @client.command()
 async def ping(ctx):
 
-    await ctx.channel.send(f'I am here!\nPing: {round(client.latency * 1000)}ms')
+    await ctx.channel.send(f'Meow!\nPing: {round(client.latency * 1000)}ms')
     
 @client.command()
 async def rename(ctx, name):
