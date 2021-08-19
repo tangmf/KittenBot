@@ -12,7 +12,7 @@ import threading
 health = 100
 happiness = 100
 hunger = 100
-
+currstatus = "awake"
 print("The client is now setting up...")
 
 
@@ -78,27 +78,51 @@ async def snuggle(ctx):
         happiness = 100
     await ctx.send(f'Zzzz')
     print("Snuggled. Current happiness: " + happiness)
+    
+@client.command()
+async def pet(ctx):
+    global happiness
+    happiness = happiness + 10
+    if happiness >= 100:
+        happiness = 100
+    await ctx.send(f'mew')
+    print("Petted. Current happiness: " + happiness)
 
     
 @client.command()
 async def sleep(ctx):
+    global currstatus
     global happiness
     global health
-    happiness = happiness + 5
-    health = health + 10
-    if happiness >= 100:
-        happiness = 100
-    if health >= 100:
-        health = 100
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game(f'Zzzz'))
+    print(currstatus)
+
+    if currstatus == "awake":
+        happiness = happiness + 5
+        health = health + 10
+        if happiness >= 100:
+            happiness = 100
+        if health >= 100:
+            health = 100
+        currstatus = "sleeping"
+        print("now sleeping")
+        await client.change_presence(status=discord.Status.idle, activity=discord.Game(f'Zzzz'))
+    else:
+        print("already sleeping")
+        await ctx.send("meow??")
 
 @client.command()
 async def wakeup(ctx):
     global health
-    health = health + 5
-    if health >= 100:
-        health = 100
-    await client.change_presence(status=discord.Status.online, activity=discord.Game(f'meow'))
+    global currstatus
+    if currstatus == "sleeping":
+        health = health + 5
+        if health >= 100:
+            health = 100
+        currstatus = "awake"
+        await client.change_presence(status=discord.Status.online, activity=discord.Game(f'meow'))
+    else:
+        await ctx.send("meow??")
+    
     
 @client.command()
 async def ping(ctx):
