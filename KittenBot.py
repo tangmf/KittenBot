@@ -13,8 +13,8 @@ health = 100
 happiness = 100
 hunger = 100
 currstatus = "awake"
-print("The client is now setting up...")
 
+print("The client is now setting up...")
 
 
 @client.event
@@ -46,8 +46,8 @@ def tick():
   if happiness <= 0:
       happiness = 0
       health -= 10
-  if health <= 0:
-      health = 0
+  if health <=0:
+      health = 0;
   printdetails()
   
 tick()
@@ -78,7 +78,8 @@ async def snuggle(ctx):
         happiness = 100
     await ctx.send(f'Zzzz')
     print("Snuggled. Current happiness: " + happiness)
-    
+
+
 @client.command()
 async def pet(ctx):
     global happiness
@@ -123,10 +124,8 @@ async def wakeup(ctx):
     else:
         await ctx.send("meow??")
     
-    
 @client.command()
 async def ping(ctx):
-
     await ctx.channel.send(f'Meow!\nPing: {round(client.latency * 1000)}ms')
     
 @client.command()
@@ -136,7 +135,7 @@ async def rename(ctx, name):
     
 @client.command()
 async def status(ctx):
-    await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness}\nStatus : {currstatus}
+    await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness}\nStatus : {currstatus} ')
         
 
 client.run(<token here>)
