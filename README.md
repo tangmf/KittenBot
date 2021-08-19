@@ -24,12 +24,15 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 ## Demo
 ![Demo](/Images/demonew.png)
 
+## Technologies used
+* python
+* discord.py
+* heroku
+
 ## Links and references
 * Cat image: https://timesofindia.indiatimes.com/life-style/relationships/pets/5-things-that-scare-and-stress-your-cat/articleshow/67586673.cms
   
 ## Additional Details
-* Built using discord.py
-* Hosted on heroku using a private version of the repository
 * Bot stats are shared across all servers
 
 ## Get your very own discord kitten now!
