@@ -2,7 +2,7 @@
 ![Kitten](/Images/meow.png)
 
 Your very own discord kitten, but legal.
-KittenBot is a very simple discord bot, and acts as a pet that will require it to be taken care of. There are 3 main stats that users will need to monitor; health, hunger and happiness. As time goes on, these stats will slowly drop, and it is up to members of the server to feed, play and care for it.
+KittenBot is a simple discord bot which acts as a pet that will require it to be taken care of. There are 3 main stats that users will need to monitor; health, hunger and happiness. As time goes on, these stats will slowly drop, and it is up to members of the server to feed, play and care for it. For more immersiveness, you can even put the bot to sleep, as well as wake it up.
 
 ![Profile](/Images/screenshot.png)
 
