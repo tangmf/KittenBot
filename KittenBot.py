@@ -136,7 +136,7 @@ async def rename(ctx, name):
     
 @client.command()
 async def status(ctx):
-    await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness} ')
+    await ctx.send(f'{client.user.name}\nHealth : {health}\nHunger : {hunger}\nHappiness : {happiness}\nStatus : {currstatus}
         
 
 client.run(<token here>)
