@@ -20,7 +20,7 @@ KittenBot is a simple discord bot which acts as a pet that will require it to be
 * status: Shows the values of the stats; health, hunger, happiness
 * sleep: Lets the bot sleep, where it will gain 5 happiness and 10 health. Sets the bot to idle.
 * wakeup: Wakes up the bot, where it will gain 5 health. Sets the bot back to online.
-* rename: Rename the bot, where in .rename <new name>, replace <new name> with the bot's new name. (30 minute cooldown)
+* rename: Rename the bot with a new name. (30 minute cooldown)
   
 ## Demo
 ![Demo](/Images/demonew.png)
