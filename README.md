@@ -16,6 +16,7 @@ KittenBot is a very simple discord bot, and acts as a pet that will require it t
 * ping: Pings the bot, where the bot will reply with the response time in ms.
 * feed: Feeds the bot, increasing its hunger by 10 and happiness by 2.
 * snuggle: Makes the bot snuggly and warm, increasing its happiness by 10.
+* pet: Pets the cat, increasing its happiness by 10.
 * status: Shows the values of the stats; health, hunger, happiness
 * sleep: Lets the bot sleep, where it will gain 5 happiness and 10 health. Sets the bot to idle.
 * wakeup: Wakes up the bot, where it will gain 5 health. Sets the bot back to online.
